@@ -5,13 +5,6 @@ table#tlayout {
     border-collapse: separate;
     background: white;
 }
-/* table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
-    width: 1000px; /* 设置固定宽度 */
-    margin: 0 auto; /* 居中显示 */
-} */
 
 body {
 	background: white;
@@ -47,18 +40,6 @@ body {
     text-align: left;
     vertical-align: top;
 }
-/* 修改 #layout-content */
-/* #layout-content {
-    padding-top: 0.0em;
-    padding-left: 1.0em;
-    padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
-    width: 1000px; /* 设置固定宽度 */
-    margin: 0 auto; /* 居中显示 */
-} */
 
 #layout-menu a {
 	line-height: 1.5em;
