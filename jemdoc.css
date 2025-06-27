@@ -13,6 +13,10 @@ table#tlayout {
 	margin: 0;
 } */
 
+html {
+  background-color: #eeeeee;
+}
+
 body {
   font-family: Georgia, serif;
   color: #000;
