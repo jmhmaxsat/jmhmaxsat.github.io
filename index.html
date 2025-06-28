@@ -1,177 +1,182 @@
-
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="description" content="Menghua Jiang's homepage">
-	<link rel="stylesheet" href="jemdoc.css" type="text/css">
-	<title>Menghua Jiang (蒋梦华)</title>
-   	<link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Menghua Jiang's homepage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghua Jiang (蒋梦华)</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="jemdoc.css" type="text/css">
+    
+    <!-- Google Scholar and Github links -->
+    <link rel="noopener noreferrer" href="https://scholar.google.com/citations?user=6rn8tzsAAAAJ&hl=zh-CN" target="_blank" />
+    <link rel="noopener noreferrer" href="https://github.com/jmhmaxsat" target="_blank" />
 </head>
 
 <body>
-<div id="layout-content" style="margin-top:25px"></div>
 
-<table>
-    <tbody>
-    <tr>
-    <td width="670">
+<!-- Header Section -->
+<header id="header">
+    <div id="layout-content" style="margin-top:25px"></div>
     <div id="toptitle">
-    <h1>Menghua Jiang (蒋梦华) </h1>
+        <h1>Menghua Jiang (蒋梦华)</h1>
+        <h3>Master's student</h3>
     </div>
+    <div id="contact-info">
+        <p>
+            School of Computer Science, South China Normal University<br>
+            Email: <a href="mailto:jiangmenghua@m.scnu.edu.cn">jiangmenghua@m.scnu.edu.cn</a><br>
+            <a href="https://scholar.google.com/citations?user=6rn8tzsAAAAJ&hl=zh-CN" target="_blank">[Google Scholar]</a> 
+            <a href="https://github.com/jmhmaxsat">[Github]</a>
+        </p>
+    </div>
+    <div id="profile-picture">
+        <img src="images/jmh.jpg" alt="Menghua Jiang" border="0" width="150">
+    </div>
+</header>
 
-    <h3> Master's student</h3>
+<!-- Short Bio Section -->
+<section id="short-bio">
+    <h2>Short Bio</h2>
     <p>
-    School of Computer Science, South China Normal University<br>
-    Email: <a href="mailto:jiangmenghua@m.scnu.edu.cn">jiangmenghua@m.scnu.edu.cn</a> <br>
-    <a href="https://scholar.google.com/citations?user=6rn8tzsAAAAJ&hl=zh-CN" target="_blank">[Google Scholar]</a>
-    <a href="https://github.com/jmhmaxsat">[Github]</a>
+        I am currently a master's student at the 
+        <a href="http://cs.scnu.edu.cn/" target="_blank">School of Computer Science</a>, 
+        <a href="https://www.scnu.edu.cn/" target="_blank">South China Normal University</a>, Guangzhou, China. 
+        My supervisor is Assoc. Prof. <a href="https://www.scholat.com/ychen" target="_blank">Yin Chen (陈寅)</a>.
+        I received my bachelor's degree in 2021 from the 
+        <a href="https://scst.suda.edu.cn/" target="_blank">School of Computer Science and Technology</a>,
+        <a href="https://www.suda.edu.cn/" target="_blank">Soochow University</a>, Suzhou, China.
     </p>
-    </td>
-    <td>
-    </td>
-    <td>
-    <img src="images/jmh.jpg" border="0" width="150">
-    </td>
-    </tr></tbody>
-</table>
+</section>
 
-<h2>Short Bio</h2>
-<p>
- I am currently a master's student at the 
-          <a href="http://cs.scnu.edu.cn/" target="_blank">School of Computer Science</a>, 
-          <a href="https://www.scnu.edu.cn/" target="_blank">South China Normal University</a>, Guangzhou, China. 
-          My supervisor is Assoc. Prof.
-          <a href="https://www.scholat.com/ychen" target="_blank">Yin Chen (陈寅)</a>.
-          I received my bachelor's degree in 2021 from the 
-          <a href="https://scst.suda.edu.cn/" target="_blank">School of Computer Science and Technology</a>,
-          <a href="https://www.suda.edu.cn/" target="_blank">Soochow University</a>, Suzhou, China.
+<!-- News Section -->
+<section id="news">
+    <h2>News</h2>
+    <div class="news-container">
+        <style>
+            /* Custom Scrollbar */
+            .news-container::-webkit-scrollbar {
+                width: 8px;
+            }
 
-<h2>News</h2>
-<div style="max-height: 130px; overflow-y: auto; padding: 10px; border-left: 4px solid #2c3e50; margin: 0px 0;">
-<style>
-  /* 为 Webkit 浏览器（Chrome, Safari, Edge）设置滚动条样式 */
-  div::-webkit-scrollbar {
-    width: 8px;
-  }
+            .news-container::-webkit-scrollbar-track {
+                background: #e9ecef;
+                border-radius: 4px;
+            }
 
-  div::-webkit-scrollbar-track {
-    background: #e9ecef;
-    border-radius: 4px;
-  }
+            .news-container::-webkit-scrollbar-thumb {
+                background: #2c3e50;
+                border-radius: 4px;
+            }
 
-  div::-webkit-scrollbar-thumb {
-    background: #2c3e50;
-    border-radius: 4px;
-  }
+            .news-container::-webkit-scrollbar-thumb:hover {
+                background: #1a252f;
+            }
 
-  div::-webkit-scrollbar-thumb:hover {
-    background: #1a252f;
-  }
+            /* Firefox Custom Scrollbar */
+            .news-container {
+                scrollbar-width: thin;
+                scrollbar-color: #2c3e50 #e9ecef;
+            }
+        </style>
+        <ul class="news-list">
+            <li>[2025.5] One paper is accepted by COCOON 2025</li>
+        </ul>
+    </div>
+</section>
 
-  /* 为 Firefox 设置滚动条样式 */
-  div {
-    scrollbar-width: thin;
-    scrollbar-color: #2c3e50 #e9ecef;
-  }
-</style>
-<ul style="list-style-type: none; padding-left: 0; margin: 0;">
+<!-- Publications Section -->
+<section id="publications">
+    <h2>Publications</h2>
+    <h3>2025</h3>
+    <ul>
+        <li>
+            <span class="paper-title">Enhancing Local Search for MaxSAT with Deep Differentiation Clause Weighting</span><br>
+            <span class="authors"><b>Menghua Jiang</b>, Haokai Gao, Shuhao Chen, Yin Chen*</span><br>
+            <span class="links">
+                [Paper] 
+                [<a href="https://github.com/jmhmaxsat/DeepDist">Code</a>]
+            </span>
+        </li>
+        <li>
+            <span class="paper-title">Improving Local Search for Weighted Partial MaxSAT by Initializing with Historical Information</span><br>
+            <span class="authors"><b>Menghua Jiang</b>, Rui Zhang, Yin Chen*</span><br>
+            <span class="links">
+                [Paper] 
+                [<a href="https://github.com/jmhmaxsat/HistLS">Code</a>]
+            </span>
+        </li>
+        <li>
+            <span class="paper-title">SNRWLS: Improve (W)PMS Solver with Weighting Strategies Related to Number of Soft Clauses</span><br>
+            <span class="authors">Shuhao Chen, <b>Menghua Jiang</b>, Yin Chen*</span><br>
+            <span class="links">
+                [Paper] 
+                [Code]
+            </span>
+        </li>
+    </ul>
 
-[2025.5] One papers is accepted by COCOON 2025
+    <!-- 2024 Publications -->
+    <h3>2024</h3>
+    <ul>
+        <li>
+            <span class="paper-title">RASLite: Enhancing (W)PMS Solvers Through Dynamic Initial Weight Approach</span><br>
+            <span class="authors"><b>Menghua Jiang</b>, Yin Chen*</span><br>
+            <span class="venue"><i>CSCWD 2024</i>, <b><font color="green">CCF-C</font></b></span><br>
+            <span class="links">
+                [<a href="https://ieeexplore.ieee.org/abstract/document/10580189" target="_blank">Paper</a>] 
+                [<a href="https://github.com/jmhmaxsat/RASLite">Code</a>]
+            </span>
+        </li>
+    </ul>
 
-</li>
-</ul>
-</div>
-<h2>Publications </h2>
+    <!-- 2023 Publications -->
+    <h3>2023</h3>
+    <ul>
+        <li>
+            <span class="paper-title">Heavy Weighting for Potential Important Clauses</span><br>
+            <span class="authors">Hanyi Yu, <b>Menghua Jiang</b>, Yin Chen*</span><br>
+            <span class="links">
+                [<a href="https://link.springer.com/chapter/10.1007/978-3-031-40289-0_21" target="_blank">Paper</a>] 
+                [<a href="https://github.com/whyte-yhy/SATLC">Code</a>]
+            </span>
+        </li>
+    </ul>
+</section>
 
-†: equal contribution, *: corresponding author
-	
-<h3>2025</h3>
-<ul>
-   <li class="publication-item">
-      <span class="paper-title">Enhancing Local Search for MaxSAT with Deep Differentiation Clause Weighting</span><br>
-      <span class="authors"><b>Menghua Jiang</b>, Haokai Gao, Shuhao Chen, Yin Chen*</span><br>
-<!--       <span class="venue"><i>The 31st International Computing and Combinatorics Conference(<b>COCOON 2025</b>), <b><font color="blue">CCF-B</font></b></i></span><br> -->
-      <span class="links">
-        [Paper]
-        [<a href="https://github.com/jmhmaxsat/DeepDist">Code</a>]
-      </span>
-   </li>
-	
-   <li class="publication-item">
-      <span class="paper-title">Improving Local Search for Weighted Partial MaxSAT by Initializing with Historical Information</span><br>
-      <span class="authors"><b>Menghua Jiang</b>, Rui Zhang, Yin Chen*</span><br>
-      <span class="venue"><i>The 31st International Computing and Combinatorics Conference(<b>COCOON 2025</b>), <b><font color="blue">CCF-B</font></b></i></span><br>
-      <span class="links">
-	[Paper]
-        [<a href="https://github.com/jmhmaxsat/HistLS">Code</a>]
-      </span>
-   </li>
-		
-   <li class="publication-item">
-      <span class="paper-title">SNRWLS: Improve (W)PMS Solver with Weighting Strategies Related to Number of Soft Clauses</span><br>
-      <span class="authors">Shuhao Chen, <b>Menghua Jiang</b>, Yin Chen*</span><br>
-      <span class="venue"><i>The 19th International Symposium on Theoretical Aspects of Software Engineering(<b>TASE 2025</b>), <b><font color="green">CCF-C</font></b></i></span><br>
-      <span class="links">
-        [Paper]
-	[Code]
-      </span> -->
-   </li>
-</ul>
+<!-- Competitions and Awards -->
+<section id="competitions">
+    <h2>Competitions & Awards</h2>
+    <ul>
+        <li>Runner-up in the Unweighted Anytime Track, MaxSAT Evaluation 2024</li>
+        <li>Third place in the Weighted Anytime Track, MaxSAT Evaluation 2024</li>
+    </ul>
+</section>
 
-<!---------- 2024 ---------->	
-<h3>2024</h3>
-<ul>
-   <li class="publication-item">
-      <span class="paper-title">RASLite: Enhancing (W)PMS Solvers Through Dynamic Initial Weight Approach</span><br>
-      <span class="authors"><b>Menghua Jiang</b>, Yin Chen*</span><br>
-      <span class="venue"><i>2024 27th International Conference on Computer Supported Cooperative Work in Design(<b>CSCWD 2024</b>), <b><font color="green">CCF-C</font></b></i></span><br>
-      <span class="links">
-        [<a href="https://ieeexplore.ieee.org/abstract/document/10580189" target="_blank">Paper</a>]
-        [<a href="https://github.com/jmhmaxsat/RASLite">Code</a>]
-      </span>
-   </li>
-</ul>
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>Project supported by the Scientific Research Innovation Project of Graduate School of South China Normal University, Principal Investigator (华南师范大学研究生科研创新计划项目，主持)</li>
+    </ul>
+</section>
 
-<!---------- 2023 ---------->
-<h3>2023</h3>
-<ul>
-   <li class="publication-item">
-      <span class="paper-title">Heavy Weighting for Potential Important Clauses</span><br>
-      <span class="authors">Hanyi Yu, <b>Menghua Jiang</b>, Yin Chen*</span><br>
-      <span class="venue"><i>The 16th International Conference on Knowledge Science, Engineering and Management(<b>KSEM 2023</b>), <b><font color="green">CCF-C</font></b></i></span><br>
-      <span class="links">
-        [<a href="https://link.springer.com/chapter/10.1007/978-3-031-40289-0_21" target="_blank">Paper</a>]
-        [<a href="https://github.com/whyte-yhy/SATLC">Code</a>]
-      </span>
-   </li>
-</ul>
+<!-- Honors and Awards -->
+<section id="honors">
+    <h2>Honors and Awards</h2>
+    <ul>
+        <li>National Scholarship for Master's Students (硕士研究生国家奖学金) (Top 2%)</li>
+    </ul>
+</section>
 
+<!-- Footer Section -->
+<footer id="footer">
+    <div id="footer-text">Last update: 06/2025 by Menghua Jiang.</div>
+</footer>
 
-
-<h2>Competitions Awards</h2>
-<ul>
-  <li><p>Runner-up in the Unweighted Anytime Track, MaxSAT Evaluation 2024</p></li>
-  <li><p>Third place in the Weighted Anytime Track, MaxSAT Evaluation 2024</p></li>
-  <li><p>...</p></li>
-</ul>
-
-<h2>Projects</h2>
-<ul>
-  <li><p>Project supported by the Scientific Research Innovation Project of Graduate School of South China Normal University, Principal Investigator (华南师范大学研究生科研创新计划项目，主持)</p></li>
-  <li><p>...</p></li>
-</ul>
-
-<h2>Honors and Awards</h2>
-<ul>
-  <li><p>National Scholarship for Master's Students (硕士研究生国家奖学金) (Top 2%)</p></li>
-  <li><p>...</p></li>
-</ul>
-
-
-
-
-<div id="footer">
-	<div id="footer-text"></div>
-</div>
-Last update: 06/2025 by Menghua Jiang.
 </body>
 </html>
