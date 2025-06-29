@@ -32,58 +32,6 @@ body {
   max-width: 960px;
 }
 
-/* Header Layout */
-#header {
-    display: flex;
-    justify-content: space-between; /* Ensures the text and photo are spaced apart */
-    align-items: flex-start; /* Aligns the content at the top */
-    padding: 20px;
-    position: relative;
-}
-
-/* Header text section */
-#header-text {
-    flex: 1;
-    max-width: 70%; /* Ensure the text doesn't overflow */
-}
-
-#header-text h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-}
-
-#header-text h3 {
-    font-size: 20px;
-    margin-top: 0;
-}
-
-#header-text p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-#header-text a {
-    text-decoration: none;
-    margin-right: 10px;
-    color: #007bff;
-}
-
-#header-text a:hover {
-    text-decoration: underline;
-}
-
-/* Profile picture section */
-#profile-picture {
-    position: absolute;
-    top: 0;
-    right: 20px;
-}
-
-#profile-picture img {
-    border-radius: 50%; /* Optional: to make the photo round */
-}
-
-
 #layout-menu {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
