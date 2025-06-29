@@ -12,6 +12,46 @@ body {
 	margin: 0;
 }
 */
+
+/* News Container Styles */
+.news-container {
+    /* Firefox Custom Scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #2c3e50 #e9ecef;
+    /* 其他容器样式可以加在这里 */
+}
+
+/* Custom Scrollbar (Webkit browsers) */
+.news-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.news-container::-webkit-scrollbar-track {
+    background: #e9ecef;
+    border-radius: 4px;
+}
+
+.news-container::-webkit-scrollbar-thumb {
+    background: #2c3e50;
+    border-radius: 4px;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+    background: #1a252f;
+}
+
+/* News List Styles */
+.news-list {
+    /* 你的列表样式 */
+    padding-left: 20px;
+}
+
+.news-list li {
+    margin-bottom: 10px;
+    /* 其他列表项样式 */
+}
+
+
 html {
   background-color: #eeeeee;
 }
