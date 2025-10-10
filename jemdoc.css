@@ -13,6 +13,24 @@ body {
 }
 */
 
+/* CSS */
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.date {
+    margin-left: 1em; /* 可选：增加日期与文本的间距 */
+}
+
+
 /* News Container Styles */
 .news-container {
     /* Firefox Custom Scrollbar */
