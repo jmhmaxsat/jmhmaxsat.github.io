@@ -413,3 +413,17 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+
+#header-container {
+    display: flex;
+    align-items: center;       /* 垂直居中 */
+    justify-content: space-between; /* 左右分开 */
+}
+#header-text {
+    text-align: left;
+}
+#profile-picture img {
+    width: 150px; /* 图片大小 */
+    border-radius: 50%; /* 可选圆形 */
+}
