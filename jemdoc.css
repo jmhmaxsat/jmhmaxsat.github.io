@@ -21,36 +21,6 @@ body {
     /* 其他容器样式可以加在这里 */
 }
 
-/* 基础图标样式 */
-.pub-icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 4px;
-    transition: all 0.3s ease; /* 增加平滑过渡 */
-}
-
-/* 状态1：有链接（亮黑色） */
-.icon-active {
-    color: #000 !important;   /* 纯黑 */
-    opacity: 1;               /* 完全显示 */
-    cursor: pointer;
-}
-
-/* 状态2：无链接（浅灰色） */
-.icon-inactive {
-    color: #ccc !important;   /* 浅灰色 */
-    opacity: 0.4;             /* 半透明 */
-    cursor: default;          /* 鼠标箭头不变 */
-    pointer-events: none;     /* 彻底禁止点击 */
-    text-decoration: none !important;
-}
-
-/* 鼠标悬停在亮色图标上的效果 */
-.icon-active:hover {
-    color: #444 !important;
-    transform: scale(1.1);    /* 稍微放大一点点 */
-}
-
 /* Custom Scrollbar (Webkit browsers) */
 .news-container::-webkit-scrollbar {
     width: 8px;
