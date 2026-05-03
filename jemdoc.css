@@ -51,6 +51,10 @@ body {
     /* 其他列表项样式 */
 }
 
+.title {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
 .authors {
     color: gray;              /* 默认所有作者灰色 */
 }
