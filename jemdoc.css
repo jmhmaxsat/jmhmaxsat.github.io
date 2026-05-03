@@ -51,6 +51,16 @@ body {
     /* 其他列表项样式 */
 }
 
+.authors {
+    color: gray;              /* 默认所有作者灰色 */
+}
+
+.authors .me {
+    color: goldenrod;        /* 你自己高亮 */
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 html {
   background-color: #eeeeee;
