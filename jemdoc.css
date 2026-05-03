@@ -61,6 +61,11 @@ body {
     font-style: italic;
 }
 
+.title {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
 
 html {
   background-color: #eeeeee;
