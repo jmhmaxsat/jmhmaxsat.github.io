@@ -53,6 +53,8 @@ body {
 
 .paper-title {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: #224b8d;  
+    font-weight: bold;
 }
 
 .authors {
