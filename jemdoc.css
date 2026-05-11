@@ -83,6 +83,26 @@ table#tlayout {
     font-style: italic;
 }
 
+.pub-venue {
+    color: gray;
+    font-style: italic;
+}
+
+.pub-links {
+    margin-top: 0.25em;
+}
+
+.pub-links a {
+    color: gray;
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 0.95em;
+}
+
+.pub-links a:hover {
+    color: #000;
+}
+
 
 /* =========================================================
    页面整体基础样式
