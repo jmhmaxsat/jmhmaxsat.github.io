@@ -66,12 +66,7 @@ table#tlayout {
    功能：设置论文标题字体、作者颜色，以及本人作者高亮
    ========================================================= */
 
-.paper-title {
-    font-size: 1.05em;
-    font-weight: 600;
-    color: #111;
-    line-height: 1.4;
-}
+.paper-title { font-family: "Comic Sans MS", "Comic Sans", cursive; }
 
 .authors {
     color: gray;
