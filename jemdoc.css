@@ -1,27 +1,33 @@
-/* Default css file for jemdoc. */
+/* =========================================================
+   Default CSS file for jemdoc
+   功能：页面整体布局、菜单、正文、标题、列表、代码块、打印等样式
+   ========================================================= */
+
+
+/* =========================================================
+   1. 基础表格布局
+   功能：jemdoc 主布局表格
+   ========================================================= */
 
 table#tlayout {
     border: none;
     border-collapse: separate;
     background: white;
 }
-/*
-body {
-	background: white;
-	padding-bottom: 8px;
-	margin: 0;
-}
-*/
 
-/* News Container Styles */
+
+/* =========================================================
+   2. 新闻容器与滚动条样式
+   功能：自定义 news-container 的滚动条显示效果
+   ========================================================= */
+
 .news-container {
-    /* Firefox Custom Scrollbar */
+    /* Firefox 自定义滚动条 */
     scrollbar-width: thin;
     scrollbar-color: #2c3e50 #e9ecef;
-    /* 其他容器样式可以加在这里 */
 }
 
-/* Custom Scrollbar (Webkit browsers) */
+/* Webkit 浏览器滚动条 */
 .news-container::-webkit-scrollbar {
     width: 8px;
 }
@@ -40,74 +46,94 @@ body {
     background: #1a252f;
 }
 
-/* News List Styles */
+
+/* =========================================================
+   3. 新闻列表样式
+   功能：控制新闻列表缩进和列表项间距
+   ========================================================= */
+
 .news-list {
-    /* 你的列表样式 */
     padding-left: 20px;
 }
 
-.news-list li { 
+.news-list li {
     margin-bottom: 10px;
-    /* 其他列表项样式 */
 }
+
+
+/* =========================================================
+   4. 论文标题与作者样式
+   功能：设置论文标题字体、作者颜色，以及本人作者高亮
+   ========================================================= */
 
 .paper-title {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .authors {
-    color: gray;              /* 默认所有作者灰色 */
+    color: gray;
 }
 
 .authors .me {
-    color: goldenrod;        /* 你自己高亮 */
+    color: goldenrod;
     font-weight: bold;
     font-style: italic;
 }
 
 
+/* =========================================================
+   5. 页面整体基础样式
+   功能：设置网页背景、正文宽度、字体、边距和留白
+   ========================================================= */
+
 html {
-  background-color: #eeeeee;
+    background-color: #eeeeee;
 }
 
 body {
-  font-family: Georgia, serif;
-  color: #000;
-  background-color: #ffffff;
-  text-align:left; /* for IE */
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left:  50px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  max-width: 960px;
+    font-family: Georgia, serif;
+    color: #000;
+    background-color: #ffffff;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    max-width: 960px;
 }
 
+
+/* =========================================================
+   6. 左侧菜单与正文布局
+   功能：控制 jemdoc 左侧菜单、正文区域、菜单链接样式
+   ========================================================= */
+
 #layout-menu {
-	background: #f6f6f6;
-	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 1.0em;
-	width: auto;
-	white-space: nowrap;
+    background: #f6f6f6;
+    border: 1px solid #dddddd;
+    padding-top: 0.5em;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.0em;
+    width: auto;
+    white-space: nowrap;
     text-align: left;
     vertical-align: top;
 }
 
 #layout-menu td {
-	background: #f4f4f4;
+    background: #f4f4f4;
     vertical-align: top;
 }
 
 #layout-content {
-	padding-top: 0.0em;
-	padding-left: 1.0em;
-	padding-right: 1.0em;
+    padding-top: 0.0em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
     border: none;
     background: white;
     text-align: left;
@@ -115,99 +141,144 @@ body {
 }
 
 #layout-menu a {
-	line-height: 1.5em;
-	margin-left: 0.5em;
+    line-height: 1.5em;
+    margin-left: 0.5em;
 }
+
+#layout-menu a.current:link,
+#layout-menu a.current:visited {
+    color: #022b6d;
+    border-bottom: 1px gray solid;
+}
+
+#layout-menu a:link,
+#layout-menu a:visited,
+#layout-menu a:hover {
+    color: #527bbd;
+    text-decoration: none;
+}
+
+#layout-menu a:hover {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   7. 链接与行内代码样式
+   功能：统一链接颜色、hover 效果、tt 和 pre 字体
+   ========================================================= */
 
 tt {
     background: #ffffdd;
 }
 
-pre, tt {
-	font-size: 90%;
-	font-family: monaco, monospace;
+pre,
+tt {
+    font-size: 90%;
+    font-family: monaco, monospace;
 }
 
-a, a > tt {
-	color: #224b8d;
-	text-decoration: none;
+a,
+a > tt {
+    color: #224b8d;
+    text-decoration: none;
 }
 
 a:hover {
-	border-bottom: 1px gray dotted;
+    border-bottom: 1px gray dotted;
 }
 
-#layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
-	border-bottom: 1px gray solid;
-}
-#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
-	text-decoration: none;
-}
-#layout-menu a:hover {
-	text-decoration: none;
-}
+
+/* =========================================================
+   8. 菜单分类与菜单项
+   功能：控制菜单分类标题和菜单项缩进
+   ========================================================= */
 
 div.menu-category {
-	border-bottom: 1px solid gray;
-	margin-top: 0.8em;
-	padding-top: 0.2em;
-	padding-bottom: 0.1em;
-	font-weight: bold;
+    border-bottom: 1px solid gray;
+    margin-top: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    font-weight: bold;
 }
 
 div.menu-item {
-	padding-left: 16px;
-	text-indent: -16px;
+    padding-left: 16px;
+    text-indent: -16px;
 }
+
+
+/* =========================================================
+   9. 页面顶部标题区域
+   功能：控制页面主标题、副标题和标题后的间距
+   ========================================================= */
 
 div#toptitle {
-	padding-bottom: 0.2em;
-	margin-bottom: 1.5em;
-	/*border-bottom: 3px double gray;*/
+    padding-bottom: 0.2em;
+    margin-bottom: 1.5em;
 }
 
-/* Reduce space if we begin the page with a title. */
-div#toptitle + h2, div#toptitle + h3 {
-	margin-top: 0em;
+div#toptitle + h2,
+div#toptitle + h3 {
+    margin-top: 0em;
 }
 
 div#subtitle {
-	margin-top: 0.0em;
-	margin-bottom: 0.0em;
-	padding-top: 0em;
-	padding-bottom: 0.1em;
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+    padding-top: 0em;
+    padding-bottom: 0.1em;
 }
 
+div#toptitle h1,
+#layout-content div#toptitle h1 {
+    margin-bottom: 0.0em;
+    padding-bottom: 0.1em;
+    padding-top: 0;
+    margin-top: 0.5em;
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   10. 文本强调样式
+   功能：控制 em 和 strong 的显示效果
+   ========================================================= */
+
 em {
-	font-style: italic;
+    font-style: italic;
 }
 
 strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 
-h1, h2, h3 {
-	/* color: #527bbd; */
-	color: #000000;
-	margin-top: 0.7em;
-	margin-bottom: 0.5em;
-	padding-bottom: 0.2em;
-	line-height: 1.0;
-	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+/* =========================================================
+   11. 标题样式
+   功能：统一 h1、h2、h3 的字体大小、边距和下划线
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    color: #000000;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.2em;
+    line-height: 1.0;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #aaaaaa;
 }
 
 h1 {
-	font-size: 165%;
-	padding-bottom: 0.3em;
+    font-size: 165%;
+    padding-bottom: 0.3em;
 }
 
 h2 {
-	padding-top: 0.8em;
-	font-size: 125%;
+    padding-top: 0.8em;
+    font-size: 125%;
 }
 
 h2 + h3 {
@@ -215,200 +286,264 @@ h2 + h3 {
 }
 
 h3 {
-	font-size: 110%;
-	border-bottom: none;
+    font-size: 110%;
+    border-bottom: none;
 }
 
+#layout-content h1:first-child,
+#layout-content h2:first-child,
+#layout-content h3:first-child {
+    margin-top: -0.7em;
+}
+
+
+/* =========================================================
+   12. 段落与预格式文本
+   功能：控制普通段落、pre 文本的间距和行高
+   ========================================================= */
+
 p {
-	margin-top: 0.0em;
-	margin-bottom: 0.8em;
-	padding: 0;
-	line-height: 1.3;
+    margin-top: 0.0em;
+    margin-bottom: 0.8em;
+    padding: 0;
+    line-height: 1.3;
 }
 
 pre {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
+
+/* =========================================================
+   13. 页脚样式
+   功能：控制 footer 的边框、颜色、间距和链接颜色
+   ========================================================= */
+
 div#footer {
-	font-size: small;
-	border-top: 1px solid #c0c0c0;
-	padding-top: 0.1em;
-	margin-top: 4.0em;
-	color: #c0c0c0;
+    font-size: small;
+    border-top: 1px solid #c0c0c0;
+    padding-top: 0.1em;
+    margin-top: 4.0em;
+    color: #c0c0c0;
 }
 
 div#footer a {
-	color: #80a0b0;
+    color: #80a0b0;
 }
 
 div#footer-text {
-	float: left;
-	padding-bottom: 8px;
+    float: left;
+    padding-bottom: 8px;
 }
 
-ul, ol, dl {
-	margin-top: 0.2em;
-	padding-top: 0;
-	margin-bottom: 0.8em;
-}
 
-dt {
-	margin-top: 0.5em;
-	margin-bottom: 0;
-}
+/* =========================================================
+   14. 列表样式
+   功能：控制 ul、ol、dl、li、dt、dd 的间距和列表符号
+   ========================================================= */
 
+ul,
+ol,
 dl {
-	margin-left: 20px;
-}
-
-dd {
-	color: #222222;
-}
-
-dd > *:first-child {
-	margin-top: 0;
+    margin-top: 0.2em;
+    padding-top: 0;
+    margin-bottom: 0.8em;
 }
 
 ul {
-	list-style-position: outside;
-	list-style-type: square;
-}
-
-p + ul, p + ol {
-	margin-top: -0.5em;
-}
-
-li {
-	margin-top:0.9em;
+    list-style-position: outside;
+    list-style-type: square;
 }
 
 ol {
-	list-style-position: outside;
-	list-style-type: decimal;
+    list-style-position: outside;
+    list-style-type: decimal;
 }
-
-li p, dd p {
-	margin-bottom: 0.3em;
-}
-
 
 ol ol {
-	list-style-type: lower-alpha;
+    list-style-type: lower-alpha;
 }
 
 ol ol ol {
-	list-style-type: lower-roman;
+    list-style-type: lower-roman;
 }
+
+li {
+    margin-top: 0.9em;
+}
+
+p + ul,
+p + ol {
+    margin-top: -0.5em;
+}
+
+li p,
+dd p {
+    margin-bottom: 0.3em;
+}
+
+dt {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+dl {
+    margin-left: 20px;
+}
+
+dd {
+    color: #222222;
+}
+
+dd > *:first-child {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   15. 代码块与信息块样式
+   功能：控制 codeblock、infoblock 的外边距、标题和内容区域
+   ========================================================= */
 
 p + div.codeblock {
-	margin-top: -0.6em;
+    margin-top: -0.6em;
 }
 
-div.codeblock, div.infoblock {
-	margin-right: 0%;
-	margin-top: 1.2em;
-	margin-bottom: 1.3em;
+div.codeblock,
+div.infoblock {
+    margin-right: 0%;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em;
 }
 
 div.blocktitle {
-	font-weight: bold;
-	color: #cd7b62;
-	margin-top: 1.2em;
-	margin-bottom: 0.1em;
+    font-weight: bold;
+    color: #cd7b62;
+    margin-top: 1.2em;
+    margin-bottom: 0.1em;
 }
 
 div.blockcontent {
-	border: 1px solid silver;
-	padding: 0.3em 0.5em;
+    border: 1px solid silver;
+    padding: 0.3em 0.5em;
 }
 
 div.infoblock > div.blockcontent {
-	background: #ffffee;
-}
-
-div.blockcontent p + ul, div.blockcontent p + ol {
-	margin-top: 0.4em;
-}
-
-div.infoblock p {
-	margin-bottom: 0em;
-}
-
-div.infoblock li p, div.infoblock dd p {
-	margin-bottom: 0.5em;
-}
-
-div.infoblock p + p {
-	margin-top: 0.8em;
+    background: #ffffee;
 }
 
 div.codeblock > div.blockcontent {
-	background: #f6f6f6;
+    background: #f6f6f6;
 }
 
+div.blockcontent p + ul,
+div.blockcontent p + ol {
+    margin-top: 0.4em;
+}
+
+div.infoblock p {
+    margin-bottom: 0em;
+}
+
+div.infoblock li p,
+div.infoblock dd p {
+    margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+    margin-top: 0.8em;
+}
+
+
+/* =========================================================
+   16. 代码语法高亮样式
+   功能：控制命令、语句、内置函数、特殊符号、错误、注释、字符串颜色
+   ========================================================= */
+
 span.pycommand {
-	color: #000070;
+    color: #000070;
 }
 
 span.statement {
-	color: #008800;
+    color: #008800;
 }
+
 span.builtin {
-	color: #000088;
+    color: #000088;
 }
+
 span.special {
-	color: #990000;
+    color: #990000;
 }
+
 span.operator {
-	color: #880000;
+    color: #880000;
 }
+
 span.error {
-	color: #aa0000;
+    color: #aa0000;
 }
-span.comment, span.comment > *, span.string, span.string > * {
-	color: #606060;
+
+span.comment,
+span.comment > *,
+span.string,
+span.string > * {
+    color: #606060;
 }
+
+
+/* =========================================================
+   17. 打印样式
+   功能：打印时隐藏左侧菜单
+   ========================================================= */
 
 @media print {
-	#layout-menu { display: none; }
+    #layout-menu {
+        display: none;
+    }
 }
 
+
+/* =========================================================
+   18. 全宽标题样式
+   功能：控制 fwtitle 区域的标题间距
+   ========================================================= */
+
 #fwtitle {
-	margin: 2px;
+    margin: 2px;
 }
 
 #fwtitle #toptitle {
-	padding-left: 0.5em;
-	margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
-	margin-top: -0.7em;
-}
 
-div#toptitle h1, #layout-content div#toptitle h1 {
-	margin-bottom: 0.0em;
-	padding-bottom: 0.1em;
-	padding-top: 0;
-	margin-top: 0.5em;
-	border-bottom: none;
-}
+/* =========================================================
+   19. 公式图片样式
+   功能：控制公式图片的内边距与外边距
+   ========================================================= */
 
 img.eq {
-	padding: 0;
-	padding-left: 0.1em;
-	padding-right: 0.1em;
-	margin: 0;
+    padding: 0;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    margin: 0;
 }
 
 img.eqwl {
-	padding-left: 2em;
-	padding-top: 0.6em;
-	padding-bottom: 0.2em;
-	margin: 0;
+    padding-left: 2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.2em;
+    margin: 0;
 }
+
+
+/* =========================================================
+   20. 表格与图片样式
+   功能：控制连续表格间距、表格标题行、图片边框、图片表格布局
+   ========================================================= */
 
 table + table {
     margin-top: 1em;
@@ -423,7 +558,8 @@ img {
     border: none;
 }
 
-table.imgtable, table.imgtable td {
+table.imgtable,
+table.imgtable td {
     border: none;
     text-align: left;
 }
