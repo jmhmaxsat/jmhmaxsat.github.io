@@ -68,14 +68,19 @@ table#tlayout {
 
 .paper-title {
     /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 700;
+   /* font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 2px;
    /* font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
    font-weight: 500; 
    font-size: 1.2rem;
    color: #1b7f5a; */
 }
-
 
 .authors {
     color: gray;
