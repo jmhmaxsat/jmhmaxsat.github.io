@@ -68,10 +68,11 @@ table#tlayout {
 
 .paper-title {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    /* font-size: 1.05rem; */
+    font-size: 1.05rem;
     font-style: italic;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding-bottom: 2px;
    /* font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
    font-weight: 500; 
    font-size: 1.2rem;
