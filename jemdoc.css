@@ -69,6 +69,7 @@ table#tlayout {
 .paper-title {
     /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
    font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+   font-weight: 700;
 }
 
 .authors {
@@ -112,8 +113,7 @@ html {
 }
 
 body {
-    /* font-family: Georgia, serif; */
-    font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+    font-family: Georgia, serif;
     color: #000;
     background-color: #ffffff;
     text-align: left;
