@@ -67,10 +67,10 @@ table#tlayout {
    ========================================================= */
 
 .paper-title {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-   /* font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+    /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+   font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
    font-weight: 700;
-   font-size: 1.2rem;
+   /* font-size: 1.2rem;
    color: #1b7f5a; */
 }
 
@@ -115,7 +115,9 @@ html {
 }
 
 body {
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 18px;
     color: #000;
     background-color: #ffffff;
     text-align: left;
@@ -204,8 +206,8 @@ tt {
 
 a,
 a > tt {
-    color: #224b8d;
-    /* color: #228b22; */
+    /* color: #224b8d; */
+    color: #228b22;
     text-decoration: none;
 }
 
