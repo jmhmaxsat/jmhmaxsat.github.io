@@ -117,7 +117,7 @@ html {
 body {
     /* font-family: Georgia, serif; */
     font-family: 'Crimson Text', Georgia, serif;
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     background-color: #ffffff;
     text-align: left;
@@ -289,7 +289,8 @@ strong {
 h1,
 h2,
 h3 {
-    color: #000000;
+    /* color: #000000; */
+    color: #2e8b57;
     margin-top: 0.7em;
     margin-bottom: 0.5em;
     padding-bottom: 0.2em;
