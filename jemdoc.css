@@ -293,7 +293,8 @@ strong {
 h1,
 h2,
 h3 {
-    color: #000000;
+    /* color: #000000; */
+    color: #4f8a5b;
     /* color: #2e8b57; */
     margin-top: 0.7em;
     margin-bottom: 0.5em;
