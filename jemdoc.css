@@ -210,8 +210,8 @@ tt {
 
 a,
 a > tt {
-    color: #224b8d;
-    /* color: #228b22; */
+    /* color: #224b8d; */
+    color: #FFAECC;
     text-decoration: none;
 }
 
