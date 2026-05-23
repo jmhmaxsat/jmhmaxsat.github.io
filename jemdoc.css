@@ -70,6 +70,7 @@ table#tlayout {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 1.05rem;
     font-style: italic;
+    color: #CDD5AE; 
     /* text-decoration: underline; */
     /* text-underline-offset: 2px; */
    /* font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
@@ -210,8 +211,8 @@ tt {
 
 a,
 a > tt {
-    /* color: #224b8d; */
-    color: #FFAECC;
+    color: #224b8d;
+    /* color: #FFAECC; */
     text-decoration: none;
 }
 
