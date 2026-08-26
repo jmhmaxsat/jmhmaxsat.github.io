@@ -324,6 +324,11 @@ h3 {
     border-bottom: none;
 }
 
+h4 {
+    font-size: 100%;
+    border-bottom: none;
+}
+
 #layout-content h1:first-child,
 #layout-content h2:first-child,
 #layout-content h3:first-child {
