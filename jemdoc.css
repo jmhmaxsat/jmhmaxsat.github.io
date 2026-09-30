@@ -15,7 +15,36 @@ table#tlayout {
     background: white;
 }
 
+/* 新闻年份、列表和滚动区域 */
+.news-container {
+    max-height: 10em;
+    overflow-y: auto;
+}
 
+.news-year-group {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    padding: 5px 10px 5px 0;
+}
+
+.news-year-group + .news-year-group {
+    border-top: 1px solid #ddd;
+}
+
+.news-year {
+    color: gray;
+}
+
+.news-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.news-list li {
+    margin: 0 0 10px;
+}
+
+/* 
 /* =========================================================
    新闻容器与滚动条样式
    功能：自定义 news-container 的滚动条显示效果
@@ -58,7 +87,7 @@ table#tlayout {
 
 .news-list li {
     margin-bottom: 10px;
-}
+} */
 
 
 /* =========================================================
