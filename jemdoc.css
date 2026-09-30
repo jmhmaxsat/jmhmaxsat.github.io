@@ -15,26 +15,35 @@ table#tlayout {
     background: white;
 }
 
-/* 新闻年份、列表和滚动区域 */
+/* 新闻列表和滚动区域 */
 
 .news-container {
     height: 10em;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-right: 10px;
+
+    /* Firefox：浅色滚动条 */
+    scrollbar-width: thin;
+    scrollbar-color: #cccccc #f3f3f3;
 }
 
-.news-year-group {
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    padding: 5px 10px 5px 0;
+/* Chrome、Edge、Safari：浅色滚动条 */
+.news-container::-webkit-scrollbar {
+    width: 6px;
 }
 
-.news-year-group + .news-year-group {
-    border-top: 1px solid #ddd;
+.news-container::-webkit-scrollbar-track {
+    background: #f3f3f3;
+    border-radius: 4px;
 }
 
-.news-year {
-    color: gray;
+.news-container::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 4px;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
 }
 
 .news-list {
@@ -44,6 +53,16 @@ table#tlayout {
 
 .news-list li {
     margin: 0 0 10px;
+}
+
+/* 手动添加的年份分隔虚线 */
+.news-list .news-separator {
+    list-style: none;
+    width: 35%;
+    height: 0;
+    margin: 8px 0 8px -16px;
+    padding: 0;
+    border-top: 1px dashed #cccccc;
 }
 
 
