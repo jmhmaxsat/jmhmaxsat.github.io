@@ -44,36 +44,36 @@ table#tlayout {
     margin: 0 0 10px;
 }
 
-/* 
+
 /* =========================================================
    新闻容器与滚动条样式
    功能：自定义 news-container 的滚动条显示效果
    ========================================================= */
 
-.news-container {
+/* .news-container {
     /* Firefox 自定义滚动条 */
     scrollbar-width: thin;
     scrollbar-color: #2c3e50 #e9ecef;
-}
+} */
 
 /* Webkit 浏览器滚动条 */
-.news-container::-webkit-scrollbar {
+/* .news-container::-webkit-scrollbar {
     width: 8px;
-}
+} */
 
-.news-container::-webkit-scrollbar-track {
+/* .news-container::-webkit-scrollbar-track {
     background: #e9ecef;
     border-radius: 4px;
-}
+} */
 
-.news-container::-webkit-scrollbar-thumb {
+/* .news-container::-webkit-scrollbar-thumb {
     background: #2c3e50;
     border-radius: 4px;
-}
+} */
 
-.news-container::-webkit-scrollbar-thumb:hover {
+/* .news-container::-webkit-scrollbar-thumb:hover {
     background: #1a252f;
-}
+} */
 
 
 /* =========================================================
@@ -81,7 +81,7 @@ table#tlayout {
    功能：控制新闻列表缩进和列表项间距
    ========================================================= */
 
-.news-list {
+/* .news-list {
     padding-left: 20px;
 }
 
