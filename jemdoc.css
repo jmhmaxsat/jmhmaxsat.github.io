@@ -16,9 +16,11 @@ table#tlayout {
 }
 
 /* 新闻年份、列表和滚动区域 */
+
 .news-container {
-    max-height: 10em;
-    overflow-y: auto;
+    height: 10em;
+    overflow-y: scroll;
+    padding-right: 10px;
 }
 
 .news-year-group {
