@@ -69,7 +69,7 @@ table#tlayout {
 .news-list .news-separator::before,
 .news-list .news-separator::after {
     content: "";
-    width: 45%;
+    width: 40%;
     border-top: 1px dashed #cccccc;
 }
 
