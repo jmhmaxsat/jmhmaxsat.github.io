@@ -55,13 +55,21 @@ table#tlayout {
     margin: 0 0 10px;
 }
 
-/* 手动添加的年份分隔虚线 */
+/* 手动年份和两侧虚线 */
 .news-list .news-separator {
     list-style: none;
-    width: 35%;
-    height: 0;
-    margin: 8px 0 8px -16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 10px -16px;
     padding: 0;
+    color: #888888;
+}
+
+.news-list .news-separator::before,
+.news-list .news-separator::after {
+    content: "";
+    width: 35%;
     border-top: 1px dashed #cccccc;
 }
 
